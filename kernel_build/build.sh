@@ -1,6 +1,6 @@
 #!/bin/bash
 
-XY_VERSION="R4.0"
+XY_VERSION="R4.4"
 
 set -e
 
@@ -40,7 +40,7 @@ OUT_VENDORBOOTIMG="$(pwd)/kernel_build/zip/vendor_boot.img"
 OUT_DTBIMAGE="$TMPDIR/dtb.img"
 
 # Kernel-side
-BUILD_ARGS="LOCALVERSION=-XyUnbound-${XY_VERSION} KBUILD_BUILD_USER=Gabriel260BR KBUILD_BUILD_HOST=ExynosUnbound"
+BUILD_ARGS="LOCALVERSION=-XyUnbound-${XY_VERSION} KBUILD_BUILD_USER=anirudhts KBUILD_BUILD_HOST=ExynosUnbound"
 
 kfinish() {
     rm -rf "$TMPDIR"
